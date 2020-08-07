@@ -10,3 +10,4 @@ Simple USB-C Power Delivery Tester based on ATtiny45/85 and INA219. You can swit
 ![IMG_20200712_143828_x.jpg](https://image.easyeda.com/pullimage/ZoVzqlVq2gHLoJ2bfAo0HEbaVTCVgtRwyOyRm22k.jpeg)
 ![IMG_20200712_141504_x.jpg](https://image.easyeda.com/pullimage/ffXiYx5CFdUn6zO4AGEqnH7dY0hVvZsmYm0JU1sN.jpeg)
 ![IMG_20200712_141515_x.jpg](https://image.easyeda.com/pullimage/gwFYjjN7WaZdlSfifq2qgtMBAMb0g5DvF5Cw0CiD.jpeg)
+![IMG_20200806_170004_c.jpg](https://image.easyeda.com/pullimage/7G0MNMFD1KbsZBCsNrgKHsopZNX6N6A0fyQeAxkH.jpeg)
