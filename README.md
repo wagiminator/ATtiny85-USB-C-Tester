@@ -1,5 +1,5 @@
-# USB-C Power Delivery Tester based on ATtiny25/45/85
-Simple USB-C Power Delivery Tester based on ATtiny25/45/85 and INA219. The device measures voltage, current, power, energy, capacity and displays the values on an OLED screen. You can switch between different screens by pressing the SET button.
+# USB Type-C Power Delivery Tester
+Simple USB Type-C Power Delivery Tester based on ATtiny25/45/85 and INA219. The device measures voltage, current, power, energy, capacity and displays the values on an OLED screen. You can switch between different screens by pressing the SET button.
 
 - Project Video (YouTube): https://youtu.be/QKx8Vn_IfjU
 - Design Files (EasyEDA): https://easyeda.com/wagiminator/attiny85-usb-c-tester
@@ -8,7 +8,7 @@ Simple USB-C Power Delivery Tester based on ATtiny25/45/85 and INA219. The devic
 
 # Hardware
 ## USB Connectors
-The device is equipped with a USB-C receptacle (PCB version a) or plug (PCB version b) for the input and a USB-C receptacle for the output, so that it can be plugged between the power supply and the consumer. CC1 and CC2 communication channels are passed through so that supply and consumer can negotiate the bus power.
+The device is equipped with a USB Type-C receptacle (PCB version a) or plug (PCB version b) for the input and a USB Type-C receptacle for the output, so that it can be plugged between the power supply and the consumer. CC1 and CC2 communication channels are passed through so that supply and consumer can negotiate the bus power.
 
 ![pic2.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny85-USB-C-Tester/master/documentation/USB_C_Tester_pic2.jpg)
 ![pic4.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny85-USB-C-Tester/master/documentation/USB_C_Tester_pic4.jpg)
@@ -17,7 +17,7 @@ The device is equipped with a USB-C receptacle (PCB version a) or plug (PCB vers
 An [INA219](https://www.ti.com/lit/ds/symlink/ina219.pdf) is used to measure voltage and current. The INA219 is a current shunt and power monitor with an I²C-compatible interface. The device monitors both shunt voltage drop and bus supply voltage, with programmable conversion times and filtering. A programmable calibration value, combined with an internal multiplier, enables direct readouts of current in amperes. The selected shunt resistance of 8mΩ enables both a very small influence on the circuit and a measurement with a resolution of 1mA. For an accurate measurement, a shunt resistor with a low tolerance (1% or better) should be selected.
 
 ## User Interface
-The user interface utilizes two buttons and a [128x64 pixels OLED display](http://aliexpress.com/wholesale?SearchText=128+64+0.96+oled+new+4pin). An [ATtiny24/45/85](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet.pdf) microcontroller handles the user interface as well as the calculation and  display of the values.
+The user interface utilizes two buttons and an [SSD1306 128x32 pixels OLED display](http://aliexpress.com/wholesale?SearchText=128+32+0.91+oled). An [ATtiny24/45/85](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet.pdf) microcontroller handles the user interface as well as the calculation and  display of the values.
 
 ![pic3.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny85-USB-C-Tester/master/documentation/USB_C_Tester_pic3.jpg)
 
@@ -86,6 +86,7 @@ Since there is no ICSP header on the board, you have to program the ATtiny eithe
 2. [ATtiny25/45/85 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet.pdf)
 3. [INA219 Datasheet](https://www.ti.com/lit/ds/symlink/ina219.pdf)
 4. [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+5. [128x32 OLED on Aliexpress](http://aliexpress.com/wholesale?SearchText=128+32+0.91+oled)
 
 ![pic5.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny85-USB-C-Tester/master/documentation/USB_C_Tester_pic5.jpg)
 ![pic6.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny85-USB-C-Tester/master/documentation/USB_C_Tester_pic6.jpg)
